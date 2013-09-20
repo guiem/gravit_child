@@ -1,0 +1,108 @@
+/*
+Theme Name:     Twenty Thirteen Child
+Theme URI:      http://github.com/guiem/wp_2013_child_theme
+Description:    Twenty Thirteen Child Theme
+Author:         guiem
+Author URI:     http://guiem.info
+Template:       twentythirteen
+Version:        0.1
+*/
+
+@import url("../twentythirteen/style.css");
+
+#site-title {
+	margin-right: 270px;
+	padding: 10px 0 0;
+}
+
+#site-description {
+	color: #7a7a7a;
+	font-size: 14px;
+	margin: 0 270px 10px 0;
+}
+
+/* Make sure the logo and search form don't collide */
+.one-column #branding #searchform {
+	right: 40px;
+	top: 15px;
+}
+
+span.collapsCat.hide {display:inline}
+
+#main,.singular.page .hentry {
+	padding:0;
+}
+
+/* RSS Icon */
+#access .nav-rss {
+	width: 50px;
+	text-align: center;
+	float: right;
+}
+.nav-rss,
+#access .nav-rss:hover >a,
+#access .nav-rss a:focus
+{
+	background: url('images/rss2.png');
+	background-repeat: no-repeat;
+	padding: 0;
+}
+.nav-rss a
+{
+	color: transparent !important;
+	padding: 0;
+}
+
+#branding {
+	border-top: none;
+}
+
+#site-generator {
+	background: #ffffff;
+}
+
+a{
+	color: #f3a435;
+
+}
+
+a:hover{
+	color: #f3a435;
+}
+
+
+.entry-title a:hover,
+.entry-title a:focus,
+.entry-title a:active {
+        color: #f3a435;
+}
+
+#site-title a:hover,
+#site-title a:focus,
+#site-title a:active {
+        color: #f3a435;
+}
+
+/* G.Bosch: Page title padding on top reset to 0 */
+.singular.page .hentry {
+	padding: 0;
+}
+
+/* G.Bosch: Singular content styles for Posts and Pages */
+.singular .hentry {
+	border-bottom: none;
+	padding: 0;
+	position: relative;
+}
+
+/* G.Bosch: in single posts the tittle used to appear to separated from nav bar */
+#content nav {
+        padding: 0;
+} 
+
+#nav-single .nav-next { 
+    float:right;
+}
+#nav-single .nav-previous { 
+    float:left;
+}
