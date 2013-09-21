@@ -3,7 +3,7 @@
 Template Name: Page that displays the CV
 */
 
-// if you are not using this in a child of Twenty Eleven, you need to replicate the html structure of your own theme.
+// if you are not using this in a child of Twenty Thirteen, you need to replicate the html structure of your own theme.
 
 get_header(); ?>
 <div id="primary">
@@ -25,8 +25,8 @@ This text is displayed if your browser does not support HTML5 Canvas.
 <p id="information" style="color:grey"><em>Click on any activity to display more information.</em></p>
 <p style="font-size:small"><i>Disclaimer: this is just the first CV's preview that I programmed. Code is still very unpretty but it is intended to end up as a WordPress plugin. Right now it has been built ad-hoc, so keep in mind that several changes will come. Check its own evolution <a href="http://guiem.info/wp-cv-plugin-creation/">here</a>.</i></p>
 
-<script type="text/javascript" src="/wp-content/themes/twentyelevenchild/js/prototype.js"></script>
-<script src="/wp-content/themes/twentyelevenchild/js/activities.js"></script>
+<script type="text/javascript" src="/wp-content/themes/twentythirteen/js/prototype.js"></script>
+<script src="/wp-content/themes/twentythirteenchild/js/activities.js"></script>
 
 </body>
 

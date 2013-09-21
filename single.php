@@ -15,7 +15,7 @@ get_header(); ?>
 				<?php while ( have_posts() ) : the_post(); ?>
 
 					<nav id="nav-single">
-						<h3 class="assistive-text"><?php _e( 'Post navigation', 'twentyeleven' ); ?></h3>
+						<h3 class="assistive-text"><?php _e( 'Post navigation', 'twentythirteen' ); ?></h3>
 						<!-- G.Bosch: filtering for my two different posts-->
 						<?php
 							$cat_prog = get_cat_ID('programming');
@@ -34,8 +34,8 @@ get_header(); ?>
 								$cat_filter = $cat_prog.','.$cat_wp.','.$cat_bh.','.$cat_un.','.$cat_rdp.','.$cat_serv.','.$cat_html5;
 							} 
 						?>
-						<span class="nav-previous"><?php previous_post_link( '%link', __( '<span class="meta-nav">&larr;</span> Previous', 'twentyeleven' ),FALSE,$cat_filter); ?></span>
-						<span class="nav-next"><?php next_post_link( '%link', __( 'Next <span class="meta-nav">&rarr;</span>', 'twentyeleven' ),FALSE,$cat_filter ); ?></span>
+						<span class="nav-previous"><?php previous_post_link( '%link', __( '<span class="meta-nav">&larr;</span> Previous', 'twentythirteen' ),FALSE,$cat_filter); ?></span>
+						<span class="nav-next"><?php next_post_link( '%link', __( 'Next <span class="meta-nav">&rarr;</span>', 'twentythirteen' ),FALSE,$cat_filter ); ?></span>
 						<!-- G.Bosch -->
 					</nav><!-- #nav-single -->
 
