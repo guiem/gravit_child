@@ -6,6 +6,7 @@ Template Name: Page that displays the CV
 // if you are not using this in a child of Twenty Thirteen, you need to replicate the html structure of your own theme.
 
 get_header(); ?>
+
 <div id="primary">
 <div id="content" role="main">
 <body onload="init()">

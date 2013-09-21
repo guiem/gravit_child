@@ -9,13 +9,12 @@
 
 get_header(); ?>
 
-		<div id="primary">
-			<div id="content" role="main">
+		<div id="primary" class="content-area">
+			<div id="content" class="site-content" role="main">
 
 				<?php while ( have_posts() ) : the_post(); ?>
 
-					<nav id="nav-single">
-						<h3 class="assistive-text"><?php _e( 'Post navigation', 'twentythirteen' ); ?></h3>
+					
 						<!-- G.Bosch: filtering for my two different posts-->
 						<?php
 							$cat_prog = get_cat_ID('programming');
@@ -27,21 +26,17 @@ get_header(); ?>
 							$cat_serv = get_cat_ID('server');
 							$cat_html5 = get_cat_ID('html5');
 							$category = get_the_category(); // G.Bosch: current category
-                                			if (in_category($cat_prog) or cat_is_ancestor_of($cat_prog, $category[0]->cat_ID)) {
+                            if (in_category($cat_prog) or cat_is_ancestor_of($cat_prog, $category[0]->cat_ID)) {
 								$cat_filter = $cat_pers;
 							}
 							elseif (in_category($cat_pers)){
 								$cat_filter = $cat_prog.','.$cat_wp.','.$cat_bh.','.$cat_un.','.$cat_rdp.','.$cat_serv.','.$cat_html5;
 							} 
 						?>
-						<span class="nav-previous"><?php previous_post_link( '%link', __( '<span class="meta-nav">&larr;</span> Previous', 'twentythirteen' ),FALSE,$cat_filter); ?></span>
-						<span class="nav-next"><?php next_post_link( '%link', __( 'Next <span class="meta-nav">&rarr;</span>', 'twentythirteen' ),FALSE,$cat_filter ); ?></span>
-						<!-- G.Bosch -->
-					</nav><!-- #nav-single -->
 
-					<?php get_template_part( 'content', 'single' ); ?>
-
-					<?php comments_template( '', true ); ?>
+					<?php get_template_part( 'content', get_post_format() ); ?>
+                    <?php twentythirteen_post_nav(); ?>
+					<?php comments_template(); ?>
 
 				<?php endwhile; // end of the loop. ?>
 
