@@ -102,9 +102,11 @@ a:hover{
         padding: 0;
 } 
 
-#nav-single .nav-next { 
-    float:right;
+.site-header .home-link {
+	min-height: 100%;
+	padding: 20px 20px;
 }
-#nav-single .nav-previous { 
-    float:left;
+
+.site-title {
+	padding: 20px 0 10px;
 }
