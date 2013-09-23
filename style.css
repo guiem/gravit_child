@@ -90,3 +90,17 @@ a:hover{
 .site-title {
 	padding: 20px 0 10px;
 }
+
+.navbar {
+	background-color: #bdc3c7; /* Silver */
+}
+
+ul.nav-menu ul a:hover,
+.nav-menu ul ul a:hover {
+    background-color: #27ae60; /* Nephritis */
+}
+
+.nav-menu .current_page_item > a, .nav-menu .current_page_ancestor > a, .nav-menu .current-menu-item > a, .nav-menu .current-menu-ancestor > a {
+    color: #7f8c8d; /* Asbsestos */
+}
+
