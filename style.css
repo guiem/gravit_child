@@ -33,26 +33,6 @@ span.collapsCat.hide {display:inline}
 	padding:0;
 }
 
-/* RSS Icon */
-#access .nav-rss {
-	width: 50px;
-	text-align: center;
-	float: right;
-}
-.nav-rss,
-#access .nav-rss:hover >a,
-#access .nav-rss a:focus
-{
-	background: url('images/rss2.png');
-	background-repeat: no-repeat;
-	padding: 0;
-}
-.nav-rss a
-{
-	color: transparent !important;
-	padding: 0;
-}
-
 #branding {
 	border-top: none;
 }
