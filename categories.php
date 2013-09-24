@@ -13,7 +13,7 @@ get_header(); ?>
             <h2>Archives by Category</h2>
             <?php
                     if( function_exists('collapsCat') ) {
-                        collapsCat('animate=1&inExclude=exclude&accordion=0&inExcludeCats=personal&showTopLevel=0&showEmptyCat=0&defaultExpand=rdp,wordpress,unsolved,server,html5&postSort=postDate&postSortOrder=DESC');
+                        collapsCat('animate=1&inExclude=exclude&accordion=0&inExcludeCats=personal&showTopLevel=1&showEmptyCat=0&defaultExpand=programming,bluehost,rdp,wordpress,unsolved,server,html5&postSort=postDate&postSortOrder=DESC');
                     } else {
                         echo "<ul>\n";
                         wp_get_categories();
