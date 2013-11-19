@@ -20,8 +20,9 @@ get_header(); ?>
     <?php
         $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
         $id_cat_prog = get_cat_ID('programming');
+        $id_cat_uncat = get_cat_ID('uncategorized');
         $args= array(
-            'cat' => '-'.$id_cat_prog,
+            'cat' => '-'.$id_cat_prog,'-'.$id_cat_uncat,
             'paged' => $paged
         );
         query_posts($args);
