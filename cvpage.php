@@ -9,30 +9,10 @@ get_header(); ?>
 
 <div id="primary" class="content-area">
     <div id="content" class="site-content" role="main">
-        <body onload="init()">
+        <body">
             <div align="center">
-                <?php get_template_part( 'content', 'page' ); ?>
-                <canvas id="canvas1" width="600" height="200" style="border: 1px solid black;margin-top:-40px">
-                    This text is displayed if your browser does not support HTML5 Canvas.
-                </canvas>
-                <br/>
-                <font style="font-size:12px;">
-                    <input style="display:none" id="screen-slider" type="range" value="0" max="100" min="0" onchange="changeScreenOffset(event)">
-                    <input style="display:none" id="zoom-slider" type="range" value="0" max="10" min="0" onchange="changeZoom(event)">
-                    <font color="66CCCC"><b>studies</b></font>, <font color="FF99CC"><b>yoga</b></font>, <font color="CCCCFF"><b>research</b></font>,<font color="EEBBEE"><b>freelancer</b></font>, <font color="99CC00"><b>hobbies</b></font>, <font color="66FF00"><b>altruistic</b></font>
-                </font>
-                <!--<input id="zoom-slider" type="range" value="3.5" max="10" min="0" onchange="changeZoom(event)">-->
-                <!--<input id="studies" type="checkbox" checked="checked" onchange="changeStudiesSelection(event)"/>Studies-->
-            </div>
-            <br/>
-            <div class="entry-content">
-                <font style="font-size:20px"><strong>More information</strong></font>
-                <p id="information" style="color:grey"><em>Click on any activity to display more information.</em></p>
-                <p style="font-size:small"><i>Disclaimer: this is just the first CV's preview that I programmed. Code is still very unpretty but it is intended to end up as a WordPress plugin. Right now it has been built ad-hoc, so keep in mind that several changes will come. Check its own evolution <a href="http://guiem.info/wp-cv-plugin-creation/">here</a>.</i></p>
-            </div>
-            <script type="text/javascript" src="/wp-content/themes/twentythirteenchild/js/prototype.js"></script>
-            <script src="/wp-content/themes/twentythirteenchild/js/activities.js"></script>
-        </body>
+                <iframe src='http://cdn.knightlab.com/libs/timeline/latest/embed/index.html?source=0Al2Qsef9tn05dGowM3gwaTRBWDcydHRmYlFrYmgtZ1E&font=Bevan-PotanoSans&maptype=toner&lang=en&height=650' width='100%' height='650' frameborder='0'></iframe>
+    	    </div>
     </div>
 </div>
 <?php get_footer();?>
