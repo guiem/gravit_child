@@ -25,5 +25,4 @@ get_header(); ?>
 </div><!-- #container -->
 
 <?php get_sidebar(); ?>
-<div>&nbsp;</div>
 <?php get_footer(); ?>
