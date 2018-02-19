@@ -1,141 +1,20 @@
 /*
-Theme Name:     Twenty Thirteen Child
-Theme URI:      http://github.com/guiem/wp_2013_child_theme
-Description:    Twenty Thirteen Child Theme
+Theme Name:     Gravit Child
+Theme URI:      
+Description:    Gravit Child Theme
 Author:         guiem
 Author URI:     http://guiem.info
-Template:       twentythirteen
+Template:       gravit
 Version:        0.1
 */
 
-@import url("../twentythirteen/style.css");
+@import url("../gravit/style.css");
 
-#site-title {
-	margin-right: 270px;
-	padding: 10px 0 0;
+@media screen and (max-width: 784px) {
+        ul.sub-menu {display:none !important;}
 }
 
-#site-description {
-	color: #7a7a7a;
-	font-size: 14px;
-	margin: 0 270px 10px 0;
+p {
+	font-family: 'Lustria', sans-serif !important;
 }
-
-/* Make sure the logo and search form don't collide */
-.one-column #branding #searchform {
-	right: 40px;
-	top: 15px;
-}
-
-span.collapsCat.hide {display:inline}
-
-#main,.singular.page .hentry {
-	padding:0;
-}
-
-#branding {
-	border-top: none;
-}
-
-#site-generator {
-	background: #ffffff;
-}
-
-/*
-a{
-	color: #f3a435;
-
-}
-
-a:hover{
-	color: #f3a435;
-}
-
-
-.entry-title a:hover,
-.entry-title a:focus,
-.entry-title a:active {
-        color: #f3a435;
-}
-
-#site-title a:hover,
-#site-title a:focus,
-#site-title a:active {
-        color: #f3a435;
-}
-*/
-
-/* G.Bosch: Page title padding on top reset to 0 */
-.singular.page .hentry {
-	padding: 0;
-}
-
-/* G.Bosch: Singular content styles for Posts and Pages */
-.singular .hentry {
-	border-bottom: none;
-	padding: 0;
-	position: relative;
-}
-
-/* G.Bosch: in single posts the tittle used to appear to separated from nav bar */
-#content nav {
-        padding: 0;
-} 
-
-.site-header .home-link {
-	min-height: 100%;
-	padding: 20px 20px;
-}
-
-.site-title {
-	padding: 20px 0 10px;
-}
-
-.navbar {
-	background-color: #bdc3c7; /* Silver */
-}
-
-.comment-respond {
-    background-color: #bdc3c7; /* Silver */
-}
-
-ul.nav-menu ul a:hover,
-.nav-menu ul ul a:hover {
-    background-color: #27ae60; /* Nephritis */
-}
-
-.nav-menu .current_page_item > a, .nav-menu .current_page_ancestor > a, .nav-menu .current-menu-item > a, .nav-menu .current-menu-ancestor > a {
-    color: #7f8c8d; /* Asbsestos */
-}
-
-a, .entry-title, .entry-title a, .entry-content a, .entry-meta a, .navigation a  {
-    color: #16a085; /* Green Sea */
-}
-
-a:hover, .entry-title a:hover, .entry-content a:hover, .entry-meta a:hover, .navigation a:hover {
-    color: #2ecc71; /* Emerald */
-}
-
-button, input, textarea {
-    border: 2px solid #16a085; /* Green Sea */
-}
-
-input:focus,
-textarea:focus {
-	border: 2px solid #2ecc71; /* Emerald */
-}
-
-.site-header .search-field:focus {
-	border: 2px solid #2ecc71; /* Emerald */
-}
-
-.archive-header, .paging-navigation  {
-    background-color: #2c3e50;
-}
-
-.archive-title, .archive-meta {
-    color:white;
-}
-
-
 

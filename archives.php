@@ -15,7 +15,7 @@ get_header(); ?>
             <?php
                     echo "<ul class='collapsCatList'>\n";
                     if( function_exists('collapsArch') ) {
-                        collapsArch('animate=1&inExcludeCat=exclude&inExcludeCats=uncategorized,programming,wordpress,bluehost,unsolved,rdp,server,html5,code,snippet,plugin,application,javascript');
+                        collapsArch('animate=1&inExcludeCat=exclude&inExcludeCats=uncategorized,programming,wordpress,bluehost,unsolved,rdp,server,html5,code,snippet,plugin,application,javascript,notebooks');
                     } else {
                         wp_get_archives();
                     }
